@@ -1,0 +1,60 @@
+<?php
+/**
+ * @file
+ * Code for the D7 Scraping.
+ */
+
+
+/**
+ * Implements hook_theme().
+ */
+
+function pydream_scraping_theme() {
+    return array(
+        'pydream_scraping_form_page' => array(
+            'variables' => array('items' => NULL),
+            'template'  => 'template/pydream_scraping_form_page',
+        ),
+    );
+}
+
+/**
+ * Implements hook_permission().
+ */
+function pydream_scraping_permission() {
+    return array(
+        'access pydream scraping'  => array(
+        'title'         => t('Access pydream scraping'),
+        'description'   => t('Access pydream scraping.'),
+        ),
+    );
+}
+
+/**
+ * Implements hook_menu().
+ */
+function pydream_scraping_menu() {
+
+    $items = array();
+
+    $items['scraping'] = array(
+        'title'             => t('Scraping'),
+        'type'              => MENU_NORMAL_ITEM,
+        'page callback'     => 'pydream_scraping_page',
+        'file'              => 'pydream_scraping_form.inc',
+        'access arguments'  => array('access pydream scraping'),
+    );
+
+//    $items['xxx/xx/%'] = array(
+//        'title'             => t(''),
+//        'page callback'     => 'inventory_problem_item_summary_print_page',
+//        'file'              => 'inventory_admin.inc',
+//        'access arguments'  => array('access inventory problem item summery print'),
+//        'page arguments' => array(2),
+//        'type'              => MENU_CALLBACK,
+//    );
+    
+    
+    
+    return $items;
+}
