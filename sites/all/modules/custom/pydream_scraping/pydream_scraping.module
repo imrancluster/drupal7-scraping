@@ -24,9 +24,14 @@ function pydream_scraping_theme() {
 function pydream_scraping_permission() {
     return array(
         'access pydream scraping'  => array(
-        'title'         => t('Access pydream scraping'),
-        'description'   => t('Access pydream scraping.'),
+            'title'         => t('Access pydream scraping'),
+            'description'   => t('Access pydream scraping.'),
         ),
+        'access pydream scraping save'  => array(
+            'title'         => t('Access pydream scraping save'),
+            'description'   => t('Access pydream scraping save.'),
+        ),
+
     );
 }
 
@@ -43,6 +48,14 @@ function pydream_scraping_menu() {
         'page callback'     => 'pydream_scraping_page',
         'file'              => 'pydream_scraping_form.inc',
         'access arguments'  => array('access pydream scraping'),
+    );
+
+    $items['scraping-save'] = array(
+        'title'             => t(''),
+        'type'              => MENU_NORMAL_ITEM,
+        'page callback'     => '_pydream_scraping_save',
+        'file'              => 'pydream_scraping_form.inc',
+        'access arguments'  => array('access pydream scraping save'),
     );
 
 //    $items['xxx/xx/%'] = array(

@@ -18,6 +18,17 @@ function pydream_scraping_page() {
 }
 
 
+/**
+ * Scraping save
+ */
+function _pydream_scraping_save() {
+
+    echo "<pre>"; print_r($_POST); echo "</pre>";
+
+    return "";
+}
+
+
 
 
 
