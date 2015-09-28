@@ -23,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pydream_scraping_form_page.tpl.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="pydream_scraping_form_page.tpl.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/pydream_scraping/template/pydream_scraping_form_page.tpl.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="38" selection-start="102" selection-end="115" vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="3135">
+            <state line="148" column="26" selection-start="7668" selection-end="7668" vertical-scroll-proportion="0.47945204" vertical-offset="2532" max-vertical-offset="3249">
               <folding />
             </state>
           </provider>
@@ -35,16 +35,16 @@
       <file leaf-file-name="pydream_scraping.module" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/pydream_scraping/pydream_scraping.module">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="54" selection-start="1380" selection-end="1402" vertical-scroll-proportion="0.0" vertical-offset="1045" max-vertical-offset="1501">
+            <state line="55" column="54" selection-start="1380" selection-end="1402" vertical-scroll-proportion="-5.2222223" vertical-offset="847" max-vertical-offset="1444">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pydream_scraping_form.inc" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="pydream_scraping_form.inc" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/pydream_scraping/pydream_scraping_form.inc">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="16" selection-start="419" selection-end="419" vertical-scroll-proportion="0.38184932" vertical-offset="176" max-vertical-offset="798">
+            <state line="13" column="0" selection-start="295" selection-end="295" vertical-scroll-proportion="-2.6296296" vertical-offset="176" max-vertical-offset="798">
               <folding />
             </state>
           </provider>
@@ -69,9 +69,10 @@
         <option value="$PROJECT_DIR$/sites/all/modules/custom/inventory/inventory.js" />
         <option value="$PROJECT_DIR$/sites/all/modules/custom/pydream_scraping/assets/js/pydream_scraping.js" />
         <option value="$PROJECT_DIR$/sites/all/modules/custom/pydream_scraping/assets/css/pydream_scraping.css" />
-        <option value="$PROJECT_DIR$/sites/all/modules/custom/pydream_scraping/template/pydream_scraping_form_page.tpl.php" />
         <option value="$PROJECT_DIR$/sites/all/modules/custom/pydream_scraping/pydream_scraping.module" />
         <option value="$PROJECT_DIR$/sites/all/modules/custom/pydream_scraping/pydream_scraping_form.inc" />
+        <option value="$PROJECT_DIR$/sites/all/modules/custom/pydream_scraping/schema/pydream_scrap.sql" />
+        <option value="$PROJECT_DIR$/sites/all/modules/custom/pydream_scraping/template/pydream_scraping_form_page.tpl.php" />
       </list>
     </option>
   </component>
@@ -273,6 +274,40 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="schema" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="d7scraping" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="d7scraping" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sites" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="all" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="custom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pydream_scraping" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -409,7 +444,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="773" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="773" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -418,7 +453,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33685064" sideWeight="0.6703125" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26217532" sideWeight="0.6703125" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -445,6 +480,20 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/pydream_scraping/pydream_scraping.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="54" selection-start="1380" selection-end="1402" vertical-scroll-proportion="0.0" vertical-offset="1045" max-vertical-offset="1501">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/pydream_scraping/pydream_scraping_form.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="16" selection-start="419" selection-end="419" vertical-scroll-proportion="0.0" vertical-offset="399" max-vertical-offset="798">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/pydream_scraping/template/pydream_scraping_form_page.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="38" selection-start="102" selection-end="115" vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="3135">
@@ -504,26 +553,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/pydream_scraping/assets/js/pydream_scraping.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="3" selection-start="40" selection-end="40" vertical-scroll-proportion="0.062193125" vertical-offset="0" max-vertical-offset="611" />
+        <state line="2" column="3" selection-start="40" selection-end="40" vertical-scroll-proportion="0.06333333" vertical-offset="0" max-vertical-offset="600" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/pydream_scraping/template/pydream_scraping_form_page.tpl.php">
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/pydream_scraping/schema/pydream_scrap.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="38" selection-start="102" selection-end="115" vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="3135">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/pydream_scraping/pydream_scraping.module">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="54" selection-start="1380" selection-end="1402" vertical-scroll-proportion="0.0" vertical-offset="1045" max-vertical-offset="1501">
+        <state line="66" column="46" selection-start="1921" selection-end="1921" vertical-scroll-proportion="0.9773519" vertical-offset="693" max-vertical-offset="1368">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/pydream_scraping/pydream_scraping_form.inc">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="16" selection-start="419" selection-end="419" vertical-scroll-proportion="0.38184932" vertical-offset="176" max-vertical-offset="798">
+        <state line="13" column="0" selection-start="295" selection-end="295" vertical-scroll-proportion="-2.6296296" vertical-offset="176" max-vertical-offset="798">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/pydream_scraping/pydream_scraping.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="54" selection-start="1380" selection-end="1402" vertical-scroll-proportion="-5.2222223" vertical-offset="847" max-vertical-offset="1444">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/pydream_scraping/template/pydream_scraping_form_page.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="148" column="26" selection-start="7668" selection-end="7668" vertical-scroll-proportion="0.47945204" vertical-offset="2532" max-vertical-offset="3249">
           <folding />
         </state>
       </provider>

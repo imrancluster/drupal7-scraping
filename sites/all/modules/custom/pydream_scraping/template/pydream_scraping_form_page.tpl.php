@@ -142,6 +142,12 @@
                         <div class="description">How many number of item scrap at a time?</div>
                     </div>
 
+                    <div class="form-item">
+                        <label for="scrap-flag">Flag</label>
+                        <input type="checkbox" id="scrap-flag" name="scrap_flag" class="form-checkbox">
+                        <div class="description">Yes/No Flag</div>
+                    </div>
+
                 </div>
 
             </fieldset>
