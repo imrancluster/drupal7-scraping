@@ -15,6 +15,10 @@ function pydream_scraping_theme() {
             'variables' => array('items' => NULL),
             'template'  => 'template/pydream_scraping_form_page',
         ),
+        'pydream_scraping_listing_page' => array(
+            'variables' => array('items' => NULL),
+            'template'  => 'template/pydream_scraping_listing_page',
+        ),
     );
 }
 
@@ -56,6 +60,14 @@ function pydream_scraping_menu() {
         'page callback'     => '_pydream_scraping_save',
         'file'              => 'pydream_scraping_form.inc',
         'access arguments'  => array('access pydream scraping save'),
+    );
+
+    $items['scraping-list'] = array(
+        'title'             => t('Scrap List'),
+        'type'              => MENU_NORMAL_ITEM,
+        'page callback'     => '_pydream_scraping_listing_page',
+        'file'              => 'pydream_scraping_form.inc',
+        'access arguments'  => array('access pydream scraping'),
     );
 
 //    $items['xxx/xx/%'] = array(
