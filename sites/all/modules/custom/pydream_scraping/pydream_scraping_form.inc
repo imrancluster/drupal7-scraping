@@ -81,9 +81,46 @@ function _pydream_scraping_save() {
  */
 function _pydream_scraping_listing_page() {
 
-    $items = array();
+    //Get scrap list
+    $scrap_list = _get_scrap_list();
+
+    $items = array(
+        'list' => $scrap_list,
+    );
 
     return theme( 'pydream_scraping_listing_page', array('items' => $items) );
+}
+
+
+/**
+ * Get srap list
+ */
+function _get_scrap_list() {
+
+    $results = db_select('pydream_scrap', 'ps')
+        ->fields('ps')
+        ->execute();
+
+    $data = array();
+
+    foreach ( $results as $result ) {
+        $data[] = array(
+            'subject'   => $result->subject,
+            'url'       => $result->url,
+            'field_map' => $result->field_map,
+            'language'  => $result->language,
+            'company'   => $result->company,
+            'category'  => $result->category,
+            'title'     => $result->title,
+            'schedule'  => $result->schedule,
+            'created'   => date('d-m-Y i:h:s',$result->created),
+        );
+    }
+
+    if ( !empty($data) ) {
+        return $data;
+    } else { return false;}
+
 }
 
 
