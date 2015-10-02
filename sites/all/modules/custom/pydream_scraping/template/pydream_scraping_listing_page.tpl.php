@@ -28,7 +28,10 @@
             <td><?php echo $list['title']; ?></td>
             <td><?php echo $list['schedule']; ?></td>
             <td><?php echo $list['created']; ?></td>
-            <td><a href=""><button id="scrap-edit">Edit</button></a> <a href=""><button id="scraping">Scrap</button></a></td>
+            <td>
+                <a href="/scraping?sid=<?php echo $list['sid']; ?>"><button id="scrap-edit">Edit</button></a>
+                <a href=""><button id="scraping">Scrap</button></a>
+            </td>
             </tr>
         <?php } ?>
 

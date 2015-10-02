@@ -12,9 +12,36 @@
  */
 function pydream_scraping_page() {
 
-    $items = array();
+    $scrap_data = array();
+
+    if ( isset($_GET['sid']) && !empty($_GET['sid']) ) {
+
+        $scrap_data = _get_scrap_data_by_sid($_GET['sid']);
+    }
+
+    $items = array(
+        'scrap_data'    => $scrap_data,
+    );
 
     return theme( 'pydream_scraping_form_page', array('items' => $items) );
+}
+
+
+/**
+ * $_GET['sid']
+ * get scrap data by sid
+ */
+function _get_scrap_data_by_sid($sid) {
+
+    $result = db_select('pydream_scrap', 'ps')
+        ->fields('ps')
+        ->execute()
+        ->fetchAssoc();
+
+    if ( $result )
+        return $result;
+    else
+        return false;
 }
 
 
@@ -30,7 +57,7 @@ function _pydream_scraping_save() {
 
     $post = $_POST;
 
-    if ( isset($post['scrap_subject']) && !empty($post['scrap_subject']) ) {
+    if ( isset($post['submit']) && $post['submit']=="Submit" ) {
 
         $flag = isset($post['scrap_flag']) && $post['scrap_flag']=='on' ? 1 : 0;
 
@@ -65,6 +92,10 @@ function _pydream_scraping_save() {
 
         drupal_set_message("The scrap has been inserted.", "status");
         drupal_goto("scraping-list");
+
+    } else if ( isset($post['update']) && $post['submit']=="Update" ) {
+
+
 
     } else {
         drupal_set_message("Some fields are required.", "warning");
@@ -105,6 +136,7 @@ function _get_scrap_list() {
 
     foreach ( $results as $result ) {
         $data[] = array(
+            'sid'       => $result->id,
             'subject'   => $result->subject,
             'url'       => $result->url,
             'field_map' => $result->field_map,
