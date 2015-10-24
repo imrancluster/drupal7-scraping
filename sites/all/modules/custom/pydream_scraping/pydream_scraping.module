@@ -35,6 +35,10 @@ function pydream_scraping_permission() {
             'title'         => t('Access pydream scraping save'),
             'description'   => t('Access pydream scraping save.'),
         ),
+        'access pydream scraping delete'  => array(
+            'title'         => t('Access pydream scraping delete'),
+            'description'   => t('Access pydream scraping delete.'),
+        ),
 
     );
 }
@@ -70,14 +74,14 @@ function pydream_scraping_menu() {
         'access arguments'  => array('access pydream scraping'),
     );
 
-//    $items['xxx/xx/%'] = array(
-//        'title'             => t(''),
-//        'page callback'     => 'inventory_problem_item_summary_print_page',
-//        'file'              => 'inventory_admin.inc',
-//        'access arguments'  => array('access inventory problem item summery print'),
-//        'page arguments' => array(2),
-//        'type'              => MENU_CALLBACK,
-//    );
+    $items['scraping-delete/%'] = array(
+        'title'             => t(''),
+        'page callback'     => '_scraping_delete',
+        'file'              => 'pydream_scraping_admin.inc',
+        'access arguments'  => array('access pydream scraping delete'),
+        'page arguments' => array(1),
+        'type'              => MENU_CALLBACK,
+    );
     
     
     

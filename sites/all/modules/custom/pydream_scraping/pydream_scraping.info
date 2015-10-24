@@ -3,3 +3,5 @@ description = This module help to scrap content using url.
 core = 7.x
 version = "7.x-1.0"
 package = Pydream
+
+scripts[] = assets/js/pydream_scraping.js

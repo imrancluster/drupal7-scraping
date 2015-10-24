@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the POTHkoli Service feature.
+ */
+
+include_once 'pothkoli_service.features.inc';

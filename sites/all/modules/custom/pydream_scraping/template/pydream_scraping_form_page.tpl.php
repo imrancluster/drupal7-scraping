@@ -87,44 +87,32 @@
 
                     <div class="form-item">
                         <label for="scrap-field1">Field One </label>
-                        <textarea name="scrap_field1" id="scrap-field1" cols="46" rows="2">
-                            <?php echo $field1 = isset($items['scrap_data']['field1']) ? $items['scrap_data']['field1'] : ""; ?>
-                        </textarea>
+                        <textarea name="scrap_field1" id="scrap-field1" cols="46" rows="2"><?php echo $field1 = isset($items['scrap_data']['field1']) ? $items['scrap_data']['field1'] : ""; ?></textarea>
                     </div>
 
                     <div class="form-item">
                         <label for="scrap-field2">Field Two </label>
-                        <textarea name="scrap_field2" id="scrap-field2" cols="46" rows="2">
-                            <?php echo $field2 = isset($items['scrap_data']['field2']) ? $items['scrap_data']['field2'] : ""; ?>
-                        </textarea>
+                        <textarea name="scrap_field2" id="scrap-field2" cols="46" rows="2"><?php echo $field2 = isset($items['scrap_data']['field2']) ? $items['scrap_data']['field2'] : ""; ?></textarea>
                     </div>
 
                     <div class="form-item">
                         <label for="scrap-field3">Field Three </label>
-                        <textarea name="scrap_field3" id="scrap-field3" cols="46" rows="2">
-                            <?php echo $field3 = isset($items['scrap_data']['field3']) ? $items['scrap_data']['field3'] : ""; ?>
-                        </textarea>
+                        <textarea name="scrap_field3" id="scrap-field3" cols="46" rows="2"><?php echo $field3 = isset($items['scrap_data']['field3']) ? $items['scrap_data']['field3'] : ""; ?></textarea>
                     </div>
 
                     <div class="form-item">
                         <label for="scrap-field4">Field Four </label>
-                        <textarea name="scrap_field4" id="scrap-field4" cols="46" rows="2">
-                            <?php echo $field4 = isset($items['scrap_data']['field4']) ? $items['scrap_data']['field4'] : ""; ?>
-                        </textarea>
+                        <textarea name="scrap_field4" id="scrap-field4" cols="46" rows="2"><?php echo $field4 = isset($items['scrap_data']['field4']) ? $items['scrap_data']['field4'] : ""; ?></textarea>
                     </div>
 
                     <div class="form-item">
                         <label for="scrap-field5">Field Five </label>
-                        <textarea name="scrap_field5" id="scrap-field5" cols="46" rows="2">
-                            <?php echo $field5 = isset($items['scrap_data']['field5']) ? $items['scrap_data']['field5'] : ""; ?>
-                        </textarea>
+                        <textarea name="scrap_field5" id="scrap-field5" cols="46" rows="2"><?php echo $field5 = isset($items['scrap_data']['field5']) ? $items['scrap_data']['field5'] : ""; ?></textarea>
                     </div>
 
                     <div class="form-item">
                         <label for="scrap-body">Body </label>
-                        <textarea name="scrap_body" id="scrap-body" cols="80" rows="5">
-                            <?php echo $body = isset($items['scrap_data']['body']) ? $items['scrap_data']['body'] : ""; ?>
-                        </textarea>
+                        <textarea name="scrap_body" id="scrap-body" cols="80" rows="5"><?php echo $body = isset($items['scrap_data']['body']) ? $items['scrap_data']['body'] : ""; ?></textarea>
                     </div>
 
                 </div>
@@ -165,10 +153,16 @@
             </fieldset>
 
 
-
-            <div class="form-actions">
-                <input class="button-primary form-submit" type="submit" name="submit" value="Submit">
-            </div>
+            <?php if ( isset($_GET['sid']) ) { ?>
+                <div class="form-actions">
+                    <input class="button-primary form-submit" type="submit" name="update" value="Update">
+                    <input type="hidden" name="sid" value="<?php echo $_GET['sid']; ?>" />
+                </div>
+            <?php } else { ?>
+                <div class="form-actions">
+                    <input class="button-primary form-submit" type="submit" name="submit" value="Submit">
+                </div>
+            <?php } ?>
 
         </form>
 

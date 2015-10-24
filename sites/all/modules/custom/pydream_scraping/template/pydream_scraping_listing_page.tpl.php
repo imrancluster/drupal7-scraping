@@ -31,6 +31,7 @@
             <td>
                 <a href="/scraping?sid=<?php echo $list['sid']; ?>"><button id="scrap-edit">Edit</button></a>
                 <a href=""><button id="scraping">Scrap</button></a>
+                <a href="/scraping-delete/<?php echo $list['sid']; ?>"><button class="scrap-delete">Delete</button></a>
             </td>
             </tr>
         <?php } ?>
