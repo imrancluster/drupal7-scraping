@@ -30,7 +30,10 @@
             <td><?php echo $list['created']; ?></td>
             <td>
                 <a href="/scraping?sid=<?php echo $list['sid']; ?>"><button id="scrap-edit">Edit</button></a>
-                <a href=""><button id="scraping">Scrap</button></a>
+                <a href="/scraping-manual/<?php echo $list['sid']; ?>">
+                    <button class="scrap-manual" id="<?php echo $list['sid']; ?>">Scrap</button>
+                    <img class="scrap-loading" src="sites/all/modules/custom/pydream_scraping/assets/images/ajax-loader.gif">
+                </a>
                 <a href="/scraping-delete/<?php echo $list['sid']; ?>"><button class="scrap-delete">Delete</button></a>
             </td>
             </tr>

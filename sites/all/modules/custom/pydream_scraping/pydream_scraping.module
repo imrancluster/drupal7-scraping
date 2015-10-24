@@ -39,6 +39,10 @@ function pydream_scraping_permission() {
             'title'         => t('Access pydream scraping delete'),
             'description'   => t('Access pydream scraping delete.'),
         ),
+        'access pydream scraping manual'  => array(
+            'title'         => t('Access pydream scraping manual'),
+            'description'   => t('Access pydream scraping manual.'),
+        ),
 
     );
 }
@@ -82,8 +86,15 @@ function pydream_scraping_menu() {
         'page arguments' => array(1),
         'type'              => MENU_CALLBACK,
     );
-    
-    
+
+    $items['scraping-manual/%'] = array(
+        'title'             => t(''),
+        'page callback'     => '_scraping_manual',
+        'file'              => 'pydream_scraping_admin.inc',
+        'access arguments'  => array('access pydream scraping manual'),
+        'page arguments' => array(1),
+        'type'              => MENU_CALLBACK,
+    );
     
     return $items;
 }
